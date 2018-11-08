@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+$hotel-primary: mat-palette($mat-deep-purple, 400);
+$hotel-accent:  mat-palette($mat-purple, A100);
+$hotel-warn:    mat-palette($mat-red);
+
+$hotel-theme: mat-light-theme($hotel-primary, $hotel-accent, $hotel-warn);
+
+@include angular-material-theme($hotel-theme);
