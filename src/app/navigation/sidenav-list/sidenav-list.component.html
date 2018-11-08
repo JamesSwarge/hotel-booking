@@ -1,3 +1,18 @@
-<p>
-  sidenav-list works!
-</p>
+<mat-nav-list class="sidenav-list">
+  <a mat-list-item routerLink="/signin" (click)="onClickClose()">
+    <mat-icon>input</mat-icon>
+    <span>SignIn</span>
+  </a>
+  <a mat-list-item routerLink="/signup" (click)="onClickClose()">
+    <mat-icon>account_circle</mat-icon>
+    <span>SignUp</span>
+  </a>
+  <a mat-list-item routerLink="/accomodations" (click)="onClickClose()">
+    <mat-icon>hotel</mat-icon>
+    <span>Accomodations</span>
+  </a>
+  <a mat-list-item routerLink="/offers" (click)="onClickClose()">
+    <mat-icon>loyalty</mat-icon>
+    <span>Offers</span>
+  </a>
+</mat-nav-list>

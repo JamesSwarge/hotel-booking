@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
 
   <!-- <h1>
     Welcome to {{ title }}!
@@ -31,7 +31,20 @@
   </mat-card> -->
   
 
-  <router-outlet></router-outlet>
+  <mat-sidenav-container>
+
+    <mat-sidenav #sidenav>
+      <app-sidenav-list (closeSideNavigation)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
+      <app-navtabs></app-navtabs>
+    </mat-sidenav-content>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
 
 </div>
 

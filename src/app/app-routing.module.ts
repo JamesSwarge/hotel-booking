@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'accomodation', component: AccomodationComponent },
+  { path: 'accomodations', component: AccomodationComponent },
   { path: 'food-and-beverages', component: FoodAndBeveragesComponent },
   { path: 'celebrations', component: CelebrationsComponent },
   { path: 'weddings', component: WeddingsComponent },
